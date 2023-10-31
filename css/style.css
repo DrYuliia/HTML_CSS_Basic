@@ -1,0 +1,49 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+#heading_1 {
+  font-size: 24px;
+  color: #00004d;
+}
+.heading {
+  font-size: 16px;
+  color: #000087;
+}
+ol > li {
+  color: #6600cc;
+  font-weight: bold;
+}
+li p {
+  color: black;
+  font-weight: 400;
+}
+.heading_3 {
+  font-size: 1.4em;
+}
+h1 + p {
+  color: #666699;
+}
+h1 ~ p {
+  font-weight: bold;
+}
+a[href^="https://"]
+{
+  font-weight: bold;
+  color: rgb(160, 0, 163);
+}
+main a {
+  text-decoration: none;
+  border: #ffffff 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: antiquewhite;
+}
