@@ -1,6 +1,6 @@
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
   color: rgb(48, 48, 48);
@@ -16,4 +16,41 @@ html {
 }
 a {
   text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 70, 119);
+}
+table {
+  border-radius: 10px;
+
+  text-align: center;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(252, 252, 255);
+  box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.month {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.td_style {
+  text-align: center;
+}
+.th_style {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(0, 70, 119);
+}
+.th_cap {
+  background-color: rgb(172, 220, 255);
+}
+.style_col {
+  background: rgb(197, 231, 255);
 }
