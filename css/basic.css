@@ -1,19 +1,142 @@
+:root {
+  --container-width: 1110px;
+  --basic-space: 1rem;
+  --primary-color: #34547a;
+  --secondary-color: #eeeff1;
+  --second-text-color: #ffffff;
+  --line-height: 1.6;
+  --text-color: #000000;
+  --p-color: #727272;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--line-height);
   font-weight: 400;
-  color: rgb(48, 48, 48);
+  color: var(--text-color);
 }
+
+.wrapper {
+  background-color: var(--secondary-color);
+  padding-top: 79px;
+}
+
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
 }
-a {
+
+/*-------------------------------first screen----------------------------------*/
+.nav {
+  margin-top: 79px;
+}
+.nav a {
+  color: inherit;
   text-decoration: none;
+  margin-right: 42px;
+  line-height: 1.6;
+}
+.main_header {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  margin-top: 150px;
+}
+.description {
+  max-width: 540px;
+  color: var(--p-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn {
+  margin-top: 65px;
+  width: 225px;
+  height: 65px;
+  background-color: #34547a;
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: var(--line-height);
+  text-align: center;
+  margin-bottom: 141px;
+}
+/*-------------------------------About me----------------------------------*/
+.heading_h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+  padding-top: 112px;
+}
+
+.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--line-height);
+  margin-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*-------------------------------Cards----------------------------------*/
+.cards-wrapper {
+  background-color: var(--primary-color);
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.card {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: inline-block;
+}
+.card-heading {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--second-text-color);
+}
+.card-description {
+  color: var(--second-text-color);
+}
+.project-description {
+  display: inline-block;
+  margin-left: 20px;
+  padding-right: 49px;
+}
+.padding_right {
+  padding-right: 0;
+}
+/*------------------------------Work-----------------------------------------------*/
+.about_work {
+  padding-bottom: 57px;
+}
+video {
+  width: var(--container-width);
+  height: 600px;
+}
+/*--------------------------------footer------------------------------------------*/
+footer {
+  background-color: var(--primary-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.heading_h3 {
+  font-size: 21px;
+  color: var(--second-text-color);
+  padding-bottom: 20px;
+}
+.foot {
+  color: var(--second-text-color);
 }
