@@ -1,19 +1,176 @@
+:root {
+  --basic-text-color: #161616;
+  --primery-color: #81a36b;
+  --background-color: #d8d8d6;
+  --container-width: 1110px;
+  --basic-space: 1rem;
+  --gap: 90px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
   font-weight: 400;
-  color: rgb(48, 48, 48);
-}
-.container {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
+  color: var(--basic-text-color);
+  background-color: var(--background-color);
 }
 a {
   text-decoration: none;
+  color: var(--basic-text-color);
+}
+.wrapper {
+  background-color: var(--primery-color);
+}
+.container {
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap {
+  gap: var(--gap);
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.text_center {
+  text-align: center;
+}
+
+.mw {
+  max-width: 540px;
+}
+.mw-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb_heading {
+  margin-bottom: 60px;
+}
+.mb {
+  margin-bottom: 120px;
+}
+
+/*-----------------------------HEADER-------------------------------------------*/
+.logo {
+  font-family: "Vetrino";
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--basic-text-color);
+}
+/*---------------------------first -screen---------------------------------------*/
+h1 {
+  font-family: "Vetrino";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1;
+}
+.box-link_1 {
+  padding: 20px 31px 19px 31px;
+  gap: 65px;
+  background-color: var(--primery-color);
+}
+.box-link_2 {
+  padding: 20px 16px 19px 16px;
+
+  border: 1px solid var(--primery-color);
+}
+.description {
+  margin-right: 30px;
+}
+.links {
+  gap: 65px;
+}
+
+/*----------------------------about-us-------------------------------------------*/
+h2 {
+  font-family: "Vetrino";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+}
+/*-------------------------------cards-------------------------------------------*/
+.card-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--basic-text-color);
+}
+.cards {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primery-color);
+  gap: 45px;
+}
+.img-card {
+  margin-bottom: 20px;
+}
+/*----------------------------second-screen--------------------------------------*/
+.second-screen {
+  padding-top: 120px;
+}
+/*---------------------------our-works-------------------------------------------*/
+.work {
+  background-color: var(--primery-color);
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.work p {
+  margin-top: 23px;
+  margin-bottom: 40px;
+}
+
+/*----------------------------------footer---------------------------------------*/
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 20px;
+}
+footer-titile {
+  font-size: 24px;
+}
+.mt {
+  margin-top: 40px;
+}
+.items-start {
+  align-items: baseline;
+}
+.social {
+  margin-top: 40px;
+}
+.mr {
+  margin-right: 20px;
+}
+.year {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+}
+.foot {
+  padding-bottom: 60px;
 }
