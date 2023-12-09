@@ -1,9 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   color: rgb(48, 48, 48);
+}
+main {
+  background: #333333;
+  border-bottom: 5px solid #009eff;
 }
 .container {
   width: 100%;
@@ -16,4 +24,54 @@ html {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 15px 30px;
+}
+ul {
+  list-style-type: none;
+}
+.main_menu {
+  display: flex;
+  justify-content: center;
+  background: #333333;
+}
+.main_menu li:hover {
+  background-color: #009eff;
+}
+
+.sub_menu {
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  z-index: 5;
+}
+.sub_menu li {
+  position: relative;
+}
+
+.sub_menu .sub_menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.sub_menu li:hover > a {
+  background-color: #015284;
+}
+
+.main_menu li:hover > .sub_menu {
+  display: block;
+}
+
+.sub_menu a {
+  border-bottom: 2px solid 0084EF;
+  padding: 10px 20px;
+  background-color: #009eff;
+  display: block;
+  border-bottom: 2px solid #025c94;
+}
+.span {
+  position: absolute;
+  right: 20px;
 }
