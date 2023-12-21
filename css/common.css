@@ -147,7 +147,6 @@
   line-height: 1.2;
   max-width: 720px;
   padding-bottom: 78px;
-  padding-left: 340px;
 }
 .companies-screen .companies__description .companies__logos {
   display: flex;
@@ -400,6 +399,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
   padding-bottom: 105px;
 }
 .reviews-screen .reviews .reviews_description {
@@ -429,11 +429,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .rating-screen .rating .rating_block_1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 67px;
   padding-right: 125px;
   padding-top: 47px;
@@ -453,6 +455,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 70px;
 }
 .rating-screen .rating .rating_block_2 .c_2,
@@ -550,6 +553,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .footer .container .case {
   max-width: 370px;
@@ -582,6 +586,7 @@
 }
 .footer .container .footer__menu {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer .container .footer__menu .menu_list {
   padding-bottom: 21px;
@@ -622,6 +627,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
   gap: 14px;
 }
 .footer .localise .info .info_text {

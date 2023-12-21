@@ -133,7 +133,6 @@
       @include heading_h2;
       max-width: 720px;
       padding-bottom: 78px;
-      padding-left: 340px;
     }
     .companies__logos {
       display: flex;
@@ -345,6 +344,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
     padding-bottom: 105px;
     .reviews_description {
       font-size: 30px;
@@ -374,11 +374,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .rating_block_1 {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       gap: 67px;
 
       padding-right: 125px;
@@ -399,6 +401,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       gap: 70px;
       .c_2,
       .capterra {
@@ -495,6 +498,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     .case {
       max-width: 370px;
@@ -522,13 +526,13 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 30px;
-
         text-align: left;
       }
     }
 
     .footer__menu {
       display: flex;
+      flex-wrap: wrap;
       .menu_list {
         padding-bottom: 21px;
         padding-right: 75px;
@@ -567,6 +571,7 @@
       display: flex;
       justify-content: space-between;
       align-items: start;
+      flex-wrap: wrap;
       gap: 14px;
       .info_text {
         max-width: 300px;
