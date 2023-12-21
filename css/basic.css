@@ -1,13 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Graphik LCG", sans-serif;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
-  color: rgb(48, 48, 48);
+  color: #000000;
 }
-.container {
+.wrapper {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1338px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -16,4 +20,14 @@ html {
 }
 a {
   text-decoration: none;
+}
+.container {
+  max-width: 1290px;
+  width: 100%;
+  max-width: 1338px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
 }
