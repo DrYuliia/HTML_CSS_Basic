@@ -46,8 +46,6 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
   line-height: 2.81;
   text-align: center;
-}
-.header__button .log_in a {
   color: #000000;
 }
 .header__button .try_free {
@@ -55,8 +53,6 @@
   background-color: #ff6336;
   line-height: 2.81;
   text-align: center;
-}
-.header__button .try_free a {
   color: #ffffff;
 }
 
@@ -93,8 +89,6 @@
   background-color: #ff6336;
   text-align: center;
   margin-right: 10px;
-}
-.first-screen .btn__try-free > a {
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
@@ -105,8 +99,6 @@
   min-width: 160px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.first-screen .btn__demo > a {
   color: #000000;
   font-weight: 600;
   font-size: 16px;
@@ -163,109 +155,39 @@
   flex-wrap: wrap;
   margin-bottom: 150px;
 }
-.steps-screen .control {
-  display: flex;
-  justify-content: space-between;
-  gap: 165px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.steps-screen .control .step__control {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.steps-screen .control .step__control .step__heading {
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.2;
-  max-width: 493px;
-}
-.steps-screen .control .step__control .step__description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  max-width: 491px;
-}
-.steps-screen .control .step__control .step__description > span {
-  text-decoration: underline;
-}
-.steps-screen .control .step__control .step__link {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #000000;
-}
-.steps-screen .market {
+.steps-screen .step {
   display: flex;
   justify-content: space-between;
   gap: 138px;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
-}
-.steps-screen .market .step__shorten_time {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   flex-wrap: wrap;
 }
-.steps-screen .market .step__shorten_time .step__heading {
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.2;
-  max-width: 379px;
-}
-.steps-screen .market .step__shorten_time .step__description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  max-width: 450px;
-}
-.steps-screen .market .step__shorten_time .step__description > span {
-  text-decoration: underline;
-}
-.steps-screen .market .step__shorten_time .step__link {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #000000;
-}
-.steps-screen .quality {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 138px;
-  flex-wrap: wrap;
-}
-.steps-screen .quality .step__quality {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.steps-screen .quality .step__quality .step__heading {
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.steps-screen .quality .step__quality .step__description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
+.steps-screen .step .step__control {
   max-width: 520px;
 }
-.steps-screen .quality .step__quality .step__description > span {
+.steps-screen .step .step__control .step__heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.steps-screen .step .step__control .step__description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.steps-screen .step .step__control .step__description > span {
   text-decoration: underline;
 }
-.steps-screen .quality .step__quality .step__link {
+.steps-screen .step .step__control .step__link {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   color: #000000;
 }
-.steps-screen .work {
+.steps-screen .step_revers {
   display: flex;
   justify-content: space-between;
   gap: 138px;
@@ -273,28 +195,89 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.steps-screen .work .step__less-work {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  flex-wrap: wrap;
+.steps-screen .step_revers .step__shorten_time {
+  max-width: 520px;
 }
-.steps-screen .work .step__less-work .step__heading {
+.steps-screen .step_revers .step__shorten_time .step__heading {
   font-size: 50px;
   font-weight: 600;
   line-height: 1.2;
-  max-width: 348px;
 }
-.steps-screen .work .step__less-work .step__description {
+.steps-screen .step_revers .step__shorten_time .step__description {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  max-width: 520px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.steps-screen .work .step__less-work .step__description > span {
+.steps-screen .step_revers .step__shorten_time .step__description > span {
   text-decoration: underline;
 }
-.steps-screen .work .step__less-work .step__link {
+.steps-screen .step_revers .step__shorten_time .step__link {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+}
+.steps-screen .step {
+  display: flex;
+  justify-content: space-between;
+  gap: 138px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.steps-screen .step .step__quality {
+  max-width: 520px;
+}
+.steps-screen .step .step__quality .step__heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.steps-screen .step .step__quality .step__description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.steps-screen .step .step__quality .step__description > span {
+  text-decoration: underline;
+}
+.steps-screen .step .step__quality .step__link {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000000;
+}
+.steps-screen .step_revers {
+  display: flex;
+  justify-content: space-between;
+  gap: 138px;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.steps-screen .step_revers .step__less-work {
+  max-width: 520px;
+}
+.steps-screen .step_revers .step__less-work .step__heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.steps-screen .step_revers .step__less-work .step__description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.steps-screen .step_revers .step__less-work .step__description > span {
+  text-decoration: underline;
+}
+.steps-screen .step_revers .step__less-work .step__link {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
@@ -326,16 +309,13 @@
   font-weight: 600;
   line-height: 35px;
   text-align: center;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 .cards-screen .cards .card {
   max-width: 330px;
-  height: 294px;
   padding-top: 21px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 .cards-screen .cards .card .card_description {
   font-size: 18px;
@@ -357,29 +337,28 @@
 }
 .productivity-screen .productivity .product {
   display: flex;
+  align-items: baseline;
   gap: 31px;
   flex-wrap: wrap;
 }
 .productivity-screen .productivity .product .product__card {
-  padding-top: 50px;
-  width: 409px;
-  height: 609px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
+  margin-top: 75px;
+  max-width: 409px;
 }
 .productivity-screen .productivity .product .product__card .product_heading {
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
   text-align: left;
+  margin-top: 49px;
 }
 .productivity-screen .productivity .product .product__card .product_descr {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
+  margin-bottom: 25px;
+  margin-top: 34px;
 }
 .productivity-screen .productivity .product .product__card .product_link {
   font-size: 20px;
@@ -497,21 +476,22 @@
   line-height: 30px;
   text-align: center;
   max-width: 539px;
+  margin-bottom: 25px;
 }
 .integrate-screen .integration .integration_img {
   text-align: center;
   margin-bottom: 32px;
+  max-width: 1023px;
 }
 .integrate-screen .integration .btn_integration {
+  display: block;
   text-align: center;
   max-width: 193px;
   background-color: #ff6336;
-}
-.integrate-screen .integration .btn_integration > a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 3.75;
 }
 
 .tryFree-screen {
@@ -520,6 +500,7 @@
   padding-bottom: 161px;
 }
 .tryFree-screen .tryFree .tryFree_heading {
+  max-width: 784px;
   font-size: 65px;
   font-weight: 600;
   line-height: 75px;
@@ -530,18 +511,19 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 .tryFree-screen .tryFree .btn_tryFree {
+  display: block;
+  max-width: 160px;
   font-size: 17px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 3.529;
   background-color: #000000;
-  max-width: 160px;
   text-align: center;
   margin-top: 54px;
-}
-.tryFree-screen .tryFree .btn_tryFree > a {
   color: #ffffff;
 }
 

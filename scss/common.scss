@@ -41,18 +41,16 @@
       border: 1px solid rgba(0, 0, 0, 0.5);
       line-height: 2.81;
       text-align: center;
-      a {
-        color: #000000;
-      }
+
+      color: #000000;
     }
     .try_free {
       min-width: 120px;
       background-color: $secondary-color;
       line-height: 2.81;
       text-align: center;
-      a {
-        color: #ffffff;
-      }
+
+      color: #ffffff;
     }
   }
 }
@@ -87,24 +85,22 @@
       background-color: $secondary-color;
       text-align: center;
       margin-right: 10px;
-      > a {
-        color: #ffffff;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 3.75;
-      }
+
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 3.75;
     }
     &__demo {
       display: inline-block;
       min-width: 160px;
       text-align: center;
       border: 1px solid rgba(0, 0, 0, 0.5);
-      > a {
-        color: $primary-color;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 3.75;
-      }
+
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 3.75;
     }
   }
   .days {
@@ -149,48 +145,35 @@
   gap: 250px;
   flex-wrap: wrap;
   margin-bottom: 150px;
-  .control {
-    display: flex;
-    justify-content: space-between;
-    gap: 165px;
-    align-items: center;
-    flex-wrap: wrap;
 
+  .step {
+    @include step;
     .step__control {
-      @include step_flex-column;
+      max-width: 520px;
       .step__heading {
         @include heading_h2;
-        max-width: 493px;
       }
       .step__description {
         @include step__description;
-        max-width: 491px;
-        > span {
-          text-decoration: underline;
-        }
-      }
-      .step__link {
-        @include step_link;
-      }
-    }
-  }
-  .market {
-    display: flex;
-    justify-content: space-between;
-    gap: 138px;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
 
-    align-items: center;
+        > span {
+          text-decoration: underline;
+        }
+      }
+      .step__link {
+        @include step_link;
+      }
+    }
+  }
+  .step_revers {
+    @include step_revers;
     .step__shorten_time {
-      @include step_flex-column;
+      max-width: 520px;
       .step__heading {
         @include heading_h2;
-        max-width: 379px;
       }
       .step__description {
         @include step__description;
-        max-width: 450px;
         > span {
           text-decoration: underline;
         }
@@ -200,20 +183,16 @@
       }
     }
   }
-  .quality {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 138px;
-    flex-wrap: wrap;
+  .step {
+    @include step;
     .step__quality {
-      @include step_flex-column;
+      max-width: 520px;
       .step__heading {
         @include heading_h2;
       }
       .step__description {
         @include step__description;
-        max-width: 520px;
+
         > span {
           text-decoration: underline;
         }
@@ -223,23 +202,17 @@
       }
     }
   }
-  .work {
-    display: flex;
-    justify-content: space-between;
-    gap: 138px;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
+  .step_revers {
+    @include step_revers;
 
     .step__less-work {
-      @include step_flex-column;
+      max-width: 520px;
       .step__heading {
         @include heading_h2;
-        max-width: 348px;
       }
       .step__description {
         @include step__description;
-        max-width: 520px;
+
         > span {
           text-decoration: underline;
         }
@@ -272,14 +245,8 @@
     }
     .card {
       max-width: 330px;
-      height: 294px;
       padding-top: 21px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      text-align: center;
       .card_description {
         @include card_description;
       }
@@ -297,30 +264,28 @@
     }
     .product {
       display: flex;
-
+      align-items: baseline;
       gap: 31px;
       flex-wrap: wrap;
 
       .product__card {
-        padding-top: 50px;
-        width: 409px;
-        height: 609px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
+        margin-top: 75px;
+        max-width: 409px;
 
         .product_heading {
           font-size: 30px;
           font-weight: 600;
           line-height: 40px;
           text-align: left;
+          margin-top: 49px;
         }
         .product_descr {
           font-size: 20px;
           font-weight: 400;
           line-height: 30px;
           text-align: left;
+          margin-bottom: 25px;
+          margin-top: 34px;
         }
 
         .product_link {
@@ -441,21 +406,22 @@
       line-height: 30px;
       text-align: center;
       max-width: 539px;
+      margin-bottom: 25px;
     }
     .integration_img {
       text-align: center;
       margin-bottom: 32px;
+      max-width: 1023px;
     }
     .btn_integration {
+      display: block;
       text-align: center;
       max-width: 193px;
       background-color: $secondary-color;
-      > a {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 60px;
-      }
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 3.75;
     }
   }
 }
@@ -466,6 +432,7 @@
   padding-bottom: 161px;
   .tryFree {
     .tryFree_heading {
+      max-width: 784px;
       font-size: 65px;
       font-weight: 600;
       line-height: 75px;
@@ -477,16 +444,17 @@
       text-align: center;
     }
     .btn_tryFree {
+      display: block;
+      max-width: 160px;
       font-size: 17px;
       font-weight: 600;
-      line-height: 60px;
+      line-height: 3.529;
       background-color: #000000;
-      max-width: 160px;
+
       text-align: center;
       margin-top: 54px;
-      > a {
-        color: #ffffff;
-      }
+
+      color: #ffffff;
     }
   }
 }
