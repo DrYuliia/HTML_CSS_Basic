@@ -207,18 +207,18 @@
 
                     <div class="contact_form">
                         <h1 class="contact_form_titile">We would like to help you</h1>
-                        <form autocomplete="on" id="contact" name="info" class="form_info"
+                        <form id="contact" name="info" class="form_info"
                             action="https://fom.in.ua/echo" method="post">
 
 
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Name" name="name">
                             <textarea name="message" id="message" minlength="10" maxlength="180" rows="10"
                                 placeholder="Message"></textarea>
 
                             <br>
                             <h3 class="h3-form-title">How to answer you?</h3>
                             <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number">
-                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="email" name="email" id="em" placeholder="Email">
 
                             <button type="submit" value="Send message" class="send" form="contact" formmethod="post"
                                 formtarget="_blank" name="send contact" id="btn">Send message</button>
