@@ -42,6 +42,7 @@ menuItems.forEach(
 )
 
 var btn = document.getElementById("btn");
+
 btn.addEventListener("click", function () {
     this.classList.add("btn_active");
     btn.textContent = 'Send';
