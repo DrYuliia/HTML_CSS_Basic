@@ -15,12 +15,22 @@
   border: 0;
   box-sizing: border-box;
 }
-html {
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+html,
+body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 400;
-  color: var(--main_text_color);
+  color: #323264;
+  height: 100%;
 }
 .container {
   width: 100%;
@@ -78,6 +88,7 @@ img {
     width: 33px;
     height: 25px;
     border-radius: 8px;
+
     padding: 5px 7px;
   }
   .custom-radio-input[type="radio"]:checked + .radio-input {
@@ -347,6 +358,7 @@ img {
     margin-top: 60px;
     padding: 30px;
     position: relative;
+    bottom: 0;
   }
 
   .footer {
@@ -474,8 +486,8 @@ img {
 
   .send {
     width: 100%;
-        padding: 15px;
-       margin-top: 30px;
+    padding: 15px;
+    margin-top: 30px;
     display: block;
     background-color: var(--link-color);
     color: #ffffff;
@@ -740,8 +752,7 @@ img {
 /*----------------------------------min-width-1440------------*/
 @media screen and (min-width: 1440px) {
   .body_container {
-    max-width: 1320px; margin-left: auto;
-    margin-right: auto;
+    max-width: 1320px;
   }
   .form {
     max-width: 1080px;
@@ -763,7 +774,8 @@ img {
 @media screen and (min-width: 1920px) {
   .body_container {
     max-width: 1600px;
-   
+    margin-left: auto;
+    margin-right: auto;
   }
   .card img {
     width: 100%;
